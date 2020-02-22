@@ -1,0 +1,13 @@
+<!-- Implemented custom error page based on examples form ExpressJS GitHub
+Repo https://github.com/expressjs/express/tree/master/examples/error-pages -->
+
+<%- include ('./partials/error_header.ejs'); %>
+
+<h2>HTTP 500: Error: <%= error.message %></h2>
+<% if (settings['verbose errors']) { %>
+  <pre><%= error.stack %></pre>
+<% } else { %>
+  <p>HPPT 500: An error occurred!</p>
+<% } %>
+
+<%- include ('./partials/error_footer.ejs'); %>
