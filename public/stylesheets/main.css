@@ -1,5 +1,5 @@
-html, body {
-    height: 100%;
+body {
+    min-height: 100vh;
 }
 
 /* .carousel {
@@ -32,13 +32,3 @@ object-fit: contain;
     clear: both;
     margin-bottom: 10px;;
 }
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center;
-  }
