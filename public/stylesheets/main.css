@@ -1,0 +1,24 @@
+/* .carousel {
+
+    height:360px;
+    
+} */
+    
+.carousel-inner > .item {
+
+height:400px;
+
+object-fit: contain;
+
+}
+
+.card {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+}
+
+#scrollbox {
+    height: 6em;
+    overflow: scroll;
+}

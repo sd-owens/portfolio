@@ -7,7 +7,7 @@ const   express    = require('express'),
 
 // Root Route
 router.get('/', (req, res) => {
-    res.render('/index');
+    res.render('index.ejs');
 });
 
 router.get('/index', (req, res) => {
@@ -18,12 +18,32 @@ router.get('/index', (req, res) => {
     
 });
 
-router.post('/', upload.none(), (req, res) => {
+router.get('/about', (req, res) => {
 
 
-    res.render('index.ejs', {});
-    
+    res.render('about.ejs');
+  
 });
+
+router.get('/projects', (req, res) => {
+
+    res.render('projects.ejs');
+
+});
+
+router.get('/contact', (req, res) => {
+
+
+    res.render('contact.ejs');
+
+});
+
+// router.post('/', upload.none(), (req, res) => {
+
+
+//     res.render('index.ejs', {});
+    
+// });
 
 // 404 Error Route
 router.get('/404', function(req, res, next){
