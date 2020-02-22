@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 /* .carousel {
 
     height:360px;
@@ -22,3 +26,19 @@ object-fit: contain;
     height: 6em;
     overflow: scroll;
 }
+
+.contact-form input {
+    width: 100%;
+    clear: both;
+    margin-bottom: 10px;;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
