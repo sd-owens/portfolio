@@ -1,23 +1,13 @@
 body {
     min-height: 100vh;
-  
 }
 
-/* .carousel {
-
-    height:360px;
-    
-} */
-
 .carousel {
-    width: 75%;
    margin: 0 auto;
 }
     
 .carousel-inner > .item {
-
 height:400px;
-
 object-fit: contain;
 
 }
@@ -28,34 +18,36 @@ object-fit: contain;
     margin-bottom: 10px;
 }
 
-#scrollbox {
-    height: 6em;
-    text-align: left;
-    overflow-y: scroll;
-}
-
-/* Scrollbar styles */
-::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-    }
-    
-    ::-webkit-scrollbar-track {
-    border: 1px solid blue;
-    border-radius: 10px;
-    }
-    
-    ::-webkit-scrollbar-thumb {
-    background: blue;  
-    border-radius: 10px;
-    }
-    
-    ::-webkit-scrollbar-thumb:hover {
-    background: blue;  
-    }
-
 .contact-form input {
     width: 100%;
     clear: both;
     margin-bottom: 10px;;
 }
+
+#scrollbox {
+    height: 6em;
+    overflow-y: scroll;
+    padding-right: 1em;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+    
+::-webkit-scrollbar-track {
+    border: 1px solid #292b2c;
+    border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #292b2c;  
+    border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #292b2c;  
+}
+
+
