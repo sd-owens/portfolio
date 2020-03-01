@@ -56,13 +56,16 @@ async function getWeather() {
             document.getElementById('city').textContent = " in " + response["name"] + ".";
 
         } else {
+
             console.log("Error in request: " + req.statusText);
-        } document.getElementById('temp-max').textContent = "Today's high was " + response["main"]["temp_max"] + " F";
-        document.getElementById('temp-min').textContent = " with a low of " + response["main"]["temp_min"] + " F.";
+        }
+
+        req.send(null);
+        console.log(JSON.parse(req.responseText));
+        
     });
 
-    req.send(null);
-    console.log(JSON.parse(req.responseText));
+    
 
 }
 
