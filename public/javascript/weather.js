@@ -20,6 +20,8 @@ function bindShowWidgetButton() {
 
 async function getWeather() {
 
+    try {
+
     event.preventDefault();
 
     let CITY_NAME = document.getElementById('CITY_NAME').value;
@@ -64,6 +66,11 @@ async function getWeather() {
 
     req.send(null);
     console.log(JSON.parse(req.responseText));
+
+    } catch (error) {
+
+        console.log(error.statusText);
+    }
 
 }
 
