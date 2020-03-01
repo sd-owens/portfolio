@@ -59,13 +59,11 @@ async function getWeather() {
 
             console.log("Error in request: " + req.statusText);
         }
-
-        req.send(null);
-        console.log(JSON.parse(req.responseText));
         
     });
 
-    
+    req.send(null);
+    console.log(JSON.parse(req.responseText));
 
 }
 
