@@ -1,10 +1,17 @@
-<%- include('./partials/header.ejs') %> 
+<%- include('./partials/header.ejs') %>
+
+<!-- weather widget script -->
+<script defer language="JavaScript" src="/javascript/weather.js"></script>
+
+<div class="text-center my-3">
+  <h3>Contact Me</h3>
+</div>
 
 <div class="row my-4">
 
     <div class="col-lg-6">
         <div class="card" style="width: 28rem;">
-            <img src="/images/profile.jpg" class="card-img-top" alt="Profile picutre of Steven Owens">
+            <img src="/images/profile.jpg" class="card-img-top" alt="profile picture">
             <div class="card-body">
               <p class="card-text">I am a software engineer studying Computer Science at Oregon State University. I hold a previous bachelor’s degree in business and over 10 years of progressive experience as a program manager in one of the most technically demanding fields in the U.S. Armed Forces, the Navy’s Nuclear Propulsion program.</p>
             </div>
@@ -19,7 +26,7 @@
     <div class="col-lg-6 order-first order-lg-last">
         <div class="card" style="width: 28rem;">
             <div class="card-body">
-              <h5 class="card-title text-center">Contact Me</h5>
+              <h5 class="card-title text-center">Contact Request</h5>
            
               <form class="contact-form" action="http://flip2.engr.oregonstate.edu:24335">
                     <label for="name">Full Name</label>
@@ -32,11 +39,13 @@
                     <textarea style="display: block; width: 100%; margin-bottom: 10px;" class="input" rows="4" name="message" placeholder="A short message." required></textarea>
                     <input class="btn btn-primary" type="submit">
                     <p class="text-center">(Ensure you are logged into the OSU VPN)</p>
-
               </form>
-        
             </div>
           </div>
+          <div id="weatherWidget" class="text-center">
+            <button id="showWeather" class="btn btn-success ">Get Local Weather</button>
+          </div>
+          
     </div>
 
 </div>

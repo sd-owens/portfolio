@@ -24,6 +24,10 @@ object-fit: contain;
     margin-bottom: 10px;;
 }
 
+#weatherWidget {
+    margin: 40px;
+}
+
 #scrollbox {
     height: 6em;
     overflow-y: scroll;
