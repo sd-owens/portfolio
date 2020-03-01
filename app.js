@@ -2,18 +2,18 @@ require('dotenv').config();
 
 /* REMOVED requireHTTPS function due to openWeatherAPI lack of HTTPS support */
 
-function requireHTTPS(req, res, next) {
-  // The 'x-forwarded-proto' check is for Heroku
-  if (
-    !req.secure &&
-    req.get('x-forwarded-proto') !== 'https' &&
-    process.env.NODE_ENV !== 'development'
-  ) {
+// function requireHTTPS(req, res, next) {
+//   // The 'x-forwarded-proto' check is for Heroku
+//   if (
+//     !req.secure &&
+//     req.get('x-forwarded-proto') !== 'https' &&
+//     process.env.NODE_ENV !== 'development'
+//   ) {
     
-    res.redirect(`http://${req.get('host')}${req.url}`);
-  }
-  next();
-}
+//     res.redirect(`https://${req.get('host')}${req.url}`);
+//   }
+//   next();
+// }
 
 const bodyParser = require('body-parser'),
       express    = require('express'),
@@ -27,7 +27,7 @@ const indexRoutes = require('./routes/index');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.use(requireHTTPS);
+// app.use(requireHTTPS);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(express.static(`${__dirname}/public`));
