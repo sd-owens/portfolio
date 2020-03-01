@@ -32,12 +32,12 @@ async function getWeather() {
     let URL = undefined;
 
     if(ZIP_CODE) {
-        URL = `https://api.openweathermap.org/data/2.5/weather?zip=${ZIP_CODE},${COUNTRY_CODE}&units=imperial&appid=${API_KEY}`;
+        URL = `http://api.openweathermap.org/data/2.5/weather?zip=${ZIP_CODE},${COUNTRY_CODE}&units=imperial&appid=${API_KEY}`;
     } else  {
         if(STATE) {
-            URL = `https://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME},${STATE},${COUNTRY_CODE}&units=imperial&appid=${API_KEY}`;
+            URL = `http://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME},${STATE},${COUNTRY_CODE}&units=imperial&appid=${API_KEY}`;
         } else {
-            URL = `https://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&units=imperial&appid=${API_KEY}`;
+            URL = `http://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&units=imperial&appid=${API_KEY}`;
         }
     }
     console.log(URL);
