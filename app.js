@@ -7,6 +7,7 @@ function requireHTTPS(req, res, next) {
     req.get('x-forwarded-proto') !== 'https' &&
     process.env.NODE_ENV !== 'development'
   ) {
+    // changed https to http for openWeather API, openWeather does not support https
     res.redirect(`http://${req.get('host')}${req.url}`);
   }
   next();
