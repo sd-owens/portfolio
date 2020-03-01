@@ -7,7 +7,7 @@
   <h3>Contact Me</h3>
 </div>
 
-<div class="row my-4">
+<div class="row mt-4">
 
     <div class="col-lg-6">
         <div class="card" style="width: 28rem;">
@@ -28,7 +28,7 @@
             <div class="card-body">
               <h5 class="card-title text-center">Contact Request</h5>
            
-              <form class="contact-form" action="http://flip2.engr.oregonstate.edu:24335">
+              <form class="contact-form" target="_blank" action="http://flip2.engr.oregonstate.edu:24335">
                     <label for="name">Full Name</label>
                     <input type="text" name="name" placeholder="John Smith" required>
                     <label for="email">Email Address</label>
@@ -43,6 +43,7 @@
             </div>
           </div>
           <div id="weatherWidget" class="text-center">
+            <h3 class="mb-3"><span id="status">&nbsp;</span><span id="temp">&nbsp;</span><span id="condition"></span><span id="city">&nbsp;</span></h3>
             <button id="showWeather" class="btn btn-success ">Get Local Weather</button>
           </div>
           
