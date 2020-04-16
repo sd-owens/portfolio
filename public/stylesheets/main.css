@@ -24,6 +24,12 @@ object-fit: contain;
     margin-bottom: 10px;;
 }
 
+.get-form input {
+    width: 100%;
+    clear: both;
+    margin-bottom: 10px;;
+}
+
 #weatherWidget {
     margin: 40px;
 }
